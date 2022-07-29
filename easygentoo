@@ -231,15 +231,14 @@ mirror_check() {
 
             eb2 "* "; eg "Testing Gentoo mirrors..."; sleep 0.5s
 
-            mirrorlist="https://mirror.ps.kz/gentoo/pub http://mirror.ps.kz/gentoo/pub https://mirror.csclub.uwaterloo.ca/gentoo-distfiles/"
-            mirrorlist="${mirrorlist} https://mirror.csclub.uwaterloo.ca/gentoo-distfiles/ http://mirror.csclub.uwaterloo.ca/gentoo-distfiles/"
-            mirrorlist="${mirrorlist} http://gentoo.gossamerhost.com http://gentoo.mirror.web4u.cz/ http://gentoo.wheel.sk/"
-            mirrorlist="${mirrorlist} http://ftp-stud.hs-esslingen.de/pub/Mirrors/gentoo/ http://mirrors.xservers.ro/gentoo/"
-            mirrorlist="${mirrorlist} http://gentoo-euetib.upc.es/mirror/gentoo/ http://ftp.df.lth.se/pub/gentoo/ http://gentoo.kiev.ua/ftp/"
-            mirrorlist="${mirrorlist} https://gentoo.osuosl.org/ ftp://mirrors.tera-byte.com/pub/gentoo"
-            mirrorlist="${mirrorlist} http://gentoo.osuosl.org/ http://ftp.kaist.ac.kr/gentoo/ http://mirror.isoc.org.il/pub/gentoo/"
-            mirrorlist="${mirrorlist} http://gentoo.mirrors.tera-byte.com/ http://gentoo.prz.rzeszow.pl/ http://ftp.dei.uc.pt/pub/linux/gentoo/"
-
+            mirrorlist="https://mirror.ps.kz/gentoo/pub http://mirror.ps.kz/gentoo/pub ftp://mirror.ps.kz/gentoo/pub"
+            mirrorlist="${mirrorlist} https://download.nus.edu.sg/mirror/gentoo/ http://download.nus.edu.sg/mirror/gentoo/"
+            mirrorlist="${mirrorlist} http://download.nus.edu.sg/mirror/gentoo/ http://mirror.yandex.ru/gentoo-distfiles/"
+			mirrorlist="${mirrorlist} ftp://mirror.yandex.ru/gentoo-distfiles/ http://gentoo.bloodhost.ru/ ftp://gentoo.bloodhost.ru/ "
+			mirrorlist="${mirrorlist} http://gentoo.mirrors.ovh.net/gentoo-distfiles/ https://mirror.leaseweb.com/gentoo/ "
+			mirrorlist="${mirrorlist} http://mirror.leaseweb.com/gentoo/ https://mirror.leaseweb.com/gentoo/"
+			mirrorlist="${mirrorlist} https://gentoo.osuosl.org/ http://gentoo.osuosl.org/ https://mirror.leaseweb.com/gentoo/"
+			
             mno="1"
             for mrr in ${mirrorlist}
             do

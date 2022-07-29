@@ -231,14 +231,14 @@ mirror_check() {
 
             eb2 "* "; eg "Testing Gentoo mirrors..."; sleep 0.5s
 
-            mirrorlist="http://gentoo.mirrors.tera-byte.com/ http://ftp.ucsb.edu/pub/mirrors/linux/gentoo/ http://mirrors.rit.edu/gentoo/"
-            mirrorlist="${mirrorlist} http://gentoo.localhost.net.ar/ http://www.las.ic.unicamp.br/pub/gentoo/ http://gd.tuwien.ac.at/opsys/linux/gentoo/"
-            mirrorlist="${mirrorlist} http://mirrors.telepoint.bg/gentoo/ http://gentoo.mirror.web4u.cz/ http://gentoo.wheel.sk/"
+            mirrorlist="https://mirror.ps.kz/gentoo/pub http://mirror.ps.kz/gentoo/pub https://mirror.csclub.uwaterloo.ca/gentoo-distfiles/"
+            mirrorlist="${mirrorlist} https://mirror.csclub.uwaterloo.ca/gentoo-distfiles/ http://mirror.csclub.uwaterloo.ca/gentoo-distfiles/"
+            mirrorlist="${mirrorlist} http://gentoo.gossamerhost.com http://gentoo.mirror.web4u.cz/ http://gentoo.wheel.sk/"
             mirrorlist="${mirrorlist} http://ftp-stud.hs-esslingen.de/pub/Mirrors/gentoo/ http://mirrors.xservers.ro/gentoo/"
             mirrorlist="${mirrorlist} http://gentoo-euetib.upc.es/mirror/gentoo/ http://ftp.df.lth.se/pub/gentoo/ http://gentoo.kiev.ua/ftp/"
-            mirrorlist="${mirrorlist} http://mirrors.stuhome.net/gentoo/ ftp://mirrors.linuxant.fr/distfiles.gentoo.org"
-            mirrorlist="${mirrorlist} http://gentoo.bloodhost.ru/ http://ftp.kaist.ac.kr/gentoo/ http://mirror.isoc.org.il/pub/gentoo/"
-            mirrorlist="${mirrorlist} http://files.gentoo.gr/ http://gentoo.prz.rzeszow.pl/ http://ftp.dei.uc.pt/pub/linux/gentoo/"
+            mirrorlist="${mirrorlist} https://gentoo.osuosl.org/ ftp://mirrors.tera-byte.com/pub/gentoo"
+            mirrorlist="${mirrorlist} http://gentoo.osuosl.org/ http://ftp.kaist.ac.kr/gentoo/ http://mirror.isoc.org.il/pub/gentoo/"
+            mirrorlist="${mirrorlist} http://gentoo.mirrors.tera-byte.com/ http://gentoo.prz.rzeszow.pl/ http://ftp.dei.uc.pt/pub/linux/gentoo/"
 
             mno="1"
             for mrr in ${mirrorlist}
